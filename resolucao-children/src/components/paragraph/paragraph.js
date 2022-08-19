@@ -1,11 +1,16 @@
 import React from 'react'
 
-const ParagraphColorUppercase = ({ color, children }) => {
-  return (
-    <div>
+// antes de refatorar 
+// const ParagraphColorUppercase = ({ color, children }) => {
+//   return (
+//     <div>
+//       <p style={{color: color}}> {children.toUpperCase()} </p>
+//     </div>
+//   )
+// }
+
+const ParagraphColorUppercase = ({ color, children }) => (
       <p style={{color: color}}> {children.toUpperCase()} </p>
-    </div>
   )
-}
 
 export default ParagraphColorUppercase
